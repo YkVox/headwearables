@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class TitleScreenMixin {
 	@Inject(method = "init", at = @At("TAIL"))
 	public void onInit(CallbackInfo ci) {
-		ExampleMod.LOGGER.info("this seems to be printing correctly");
+		headwearables.headwearables.info("this seems to be printing correctly");
 	}
 }
